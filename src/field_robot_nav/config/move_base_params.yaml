@@ -1,0 +1,9 @@
+controller_frequency: 15.0
+planner_frequency: 1.0
+base_global_planner: "global_planner/GlobalPlanner"
+base_local_planner:  "teb_local_planner/TebLocalPlannerROS"
+odom_topic: /odometry/filtered
+global_costmap/robot_base_frame: base_link
+local_costmap/robot_base_frame:  base_link
+global_costmap/global_frame: map
+local_costmap/global_frame:  odom

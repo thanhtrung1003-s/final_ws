@@ -1,0 +1,2 @@
+field_robot_base:field_robot_missions:field_robot_nav:field_robot_slam
+-DCATKIN_DEVEL_PREFIX=/home/chunnee/final_ws/devel -DCMAKE_INSTALL_PREFIX=/home/chunnee/final_ws/install -G Unix Makefiles

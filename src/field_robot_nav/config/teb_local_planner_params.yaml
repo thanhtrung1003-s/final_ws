@@ -1,0 +1,23 @@
+TebLocalPlannerROS:
+  odom_topic: /odometry/filtered
+  map_frame: odom
+  wheelbase: 0.25
+  min_turning_radius: 0.4
+  cmd_angle_instead_rotvel: true
+  max_vel_x: 0.6
+  max_vel_theta: 1.2
+  acc_lim_x: 1.0
+  acc_lim_theta: 1.5
+  footprint_model:
+    type: "polygon"
+    vertices: [[0.30,0.17],[0.30,-0.17],[-0.30,-0.17],[-0.30,0.17]]
+  xy_goal_tolerance: 0.20
+  yaw_goal_tolerance: 0.25
+  min_obstacle_dist: 0.20
+  inflation_dist: 0.25
+  teb_autosize: true
+  dt_ref: 0.3
+  dt_hysteresis: 0.1
+  global_plan_overwrite_orientation: true
+  max_global_plan_lookahead_dist: 5.0
+  feasibility_check_no_poses: 5
