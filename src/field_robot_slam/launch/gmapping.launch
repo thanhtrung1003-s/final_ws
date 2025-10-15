@@ -1,5 +1,8 @@
 <launch>
- 
+ <node pkg="tf" type="static_transform_publisher" name="base_to_laser" 
+        args="0 0 0 0 0 0 base_link laser 100"/>
+  <node pkg="tf" type="static_transform_publisher" name="odom_to_base" 
+        args="0 0 0 0 0 0 odom base_link 100"/>
   <node pkg="gmapping" type="slam_gmapping" name="gmapping" output="screen">
     <param name="base_frame" value="base_link"/>
     <param name="odom_frame" value="odom"/>
